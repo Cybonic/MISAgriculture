@@ -1,0 +1,30 @@
+DEEPLABV3 NDVIR t1
+SAVED MODEL- Duration(s): 0.022 Acc: 86.38%. Prec: 64.24%. Recall: 59.95%. F1: 59.78%. IoU: 43.08%.
+DEEPLABV3 NDVIR t3
+- SAVED MODEL- Duration(s): 0.022 Acc: 87.73%. Prec: 31.51%. Recall: 51.55%. F1: 38.44%. IoU: 24.26%.
+DEEPLABV3 NDVIR t2
+ SAVED MODEL- Duration(s): 0.022 Acc: 77.7%. Prec: 48.83%. Recall: 27.73%. F1: 33.4%. IoU: 21.02%.
+DEEPLABV3 NDVIR VG
+ - SAVED MODEL- Duration(s): 0.025 Acc: 95.91%. Prec: 84.35%. Recall: 90.16%. F1: 86.2%. IoU: 77.55%.
+
+DEEPLABV3 RGB vg
+  SAVED MODEL- Duration(s): 0.021 Acc: 96.36%. Prec: 85.72%. Recall: 90.27%. F1: 87.3%. IoU: 79.06%.
+  
+  t1 
+   - SAVED MODEL- Duration(s): 0.022 Acc: 80.8%. Prec: 47.08%. Recall: 28.86%. F1: 33.5%. IoU: 20.23%.
+   t2
+    - SAVED MODEL- Duration(s): 0.02 Acc: 80.64%. Prec: 62.72%. Recall: 33.36%. F1: 41.14%. IoU: 26.82%.
+    t3
+     - SAVED MODEL- Duration(s): 0.02 Acc: 92.97%. Prec: 52.3%. Recall: 79.09%. F1: 61.82%. IoU: 45.3%.
+
+
+SEGNET RGB
+t3 -> | - SAVED MODEL- Duration(s): 0.013 Acc: 91.92%. Prec: 47.93%. Recall: 79.61%. F1: 58.62%. IoU: 42.19%.
+t2->  - SAVED MODEL- Duration(s): 0.012 Acc: 71.77%. Prec: 37.97%. Recall: 42.02%. F1: 37.88%. IoU: 24.65%.
+t1->  SAVED MODEL- Duration(s): 0.013 Acc: 81.99%. Prec: 51.29%. Recall: 64.15%. F1: 54.54%. IoU: 38.32%.
+vg->SAVED MODEL- Duration(s): 0.013 Acc: 96.24%. Prec: 87.29%. Recall: 89.41%. F1: 87.46%. IoU: 78.87%.
+
+NDVI
+t1->| - SAVED MODEL- Duration(s): 0.012 Acc: 87.77%. Prec: 65.61%. Recall: 71.77%. F1: 66.02%. IoU: 49.84%.
+t2-> - SAVED MODEL- Duration(s): 0.012 Acc: 78.34%. Prec: 51.29%. Recall: 55.73%. F1: 50.4%. IoU: 35.79%.
+t3-> - SAVED MODEL- Duration(s): 0.013 Acc: 95.62%. Prec: 67.99%. Recall: 82.39%. F1: 72.66%. IoU: 58.08%.

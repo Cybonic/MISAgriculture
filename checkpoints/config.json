@@ -1,0 +1,106 @@
+{
+    "ReduceLROnPlateau": {
+        "factor": 0.01,
+        "min_lr": 1e-06,
+        "mode": "min",
+        "patience": 10
+    },
+    "dataset_mode": "DISK",
+    "device": "cuda",
+    "experim_name": "outdoor/CrossEntropy/trainVal",
+    "ignore_index": 255,
+    "lr_scheduler": "Poly",
+    "max_epochs": 100,
+    "model": {
+        "confidence_masking": false,
+        "confidence_th": 0.5,
+        "drop": 6,
+        "drop_rate": 0.5,
+        "dsm_channels": 1,
+        "feature": {
+            "alpha": 0.5,
+            "enable_train": true,
+            "layers": [
+                4,
+                2,
+                0
+            ],
+            "loss": "CosineSimilarity",
+            "loss_weights": [
+                1,
+                1,
+                1
+            ]
+        },
+        "filter_config": [
+            64,
+            128,
+            256,
+            512,
+            512
+        ],
+        "fusion_mode": "RGB",
+        "model_name": "SegNet",
+        "n_dec_layers": 5,
+        "n_enc_layers": 5,
+        "rgb_channels": 3,
+        "softmax_temp": 1,
+        "spatial": true
+    },
+    "n_gpu": 2,
+    "optimizer": {
+        "args": {
+            "lr": 0.001,
+            "weight_decay": 1e-06
+        },
+        "lr_scheduler": "ReduceLROnPlateau",
+        "type": "AdamW"
+    },
+    "pred_tesh": 0.5,
+    "report_val": 5,
+    "root": "/home/tiago/Dropbox/research/datasets",
+    "train_loader": {
+        "aug_bool": true,
+        "batch_size": 10,
+        "dsm_dir": "depth_gray",
+        "ignore_index": 255,
+        "location": [],
+        "mask_dir": "GT_color",
+        "name": "forest",
+        "num_classes": 7,
+        "num_workers": 0,
+        "rgb_dir": "rgb",
+        "shuffle": true,
+        "subsample": 1
+    },
+    "trainer": {
+        "display": {
+            "featmaps": "H_RGB",
+            "layer_idx": 0
+        },
+        "early_stop": 10000,
+        "epochs": 10000,
+        "log_dir": "saved/",
+        "log_per_iter": 5,
+        "monitor": "max mIoU",
+        "save_dir": "checkpoints/",
+        "save_period": 3,
+        "tensorboardX": true,
+        "val": true,
+        "val_per_epochs": 3
+    },
+    "val_loader": {
+        "aug": false,
+        "batch_size": 1,
+        "dsm_dir": "depth_gray",
+        "location": [],
+        "mask_dir": "GT_color",
+        "name": "forest",
+        "num_classes": 7,
+        "num_workers": 0,
+        "rgb_dir": "rgb",
+        "shuffle": false,
+        "subsample": 1,
+        "val": false
+    }
+}
