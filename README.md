@@ -11,14 +11,14 @@ To get the datasets, please send an e-email to tiagobarros@isr.uc.pt
 
 # Requirements
 
-torch
-torchvision
-numpy
-pillow
-scikit-learn
-tqdm
-matplotlib
-visdom 
+torch \
+torchvision \
+numpy \
+pillow \
+scikit-learn \
+tqdm \
+matplotlib \
+visdom \
 
 ## TO-DO
 
