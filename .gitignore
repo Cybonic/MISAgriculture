@@ -6,3 +6,5 @@ runs/
 checkpoints/
 logs/
 dataloaders/FREBRG.py
+.vscode/
+*.json

@@ -19,8 +19,6 @@ scikit-learn
 tqdm
 matplotlib
 visdom 
-.vscode/
-*.json
 
 ## TO-DO
 
